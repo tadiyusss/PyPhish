@@ -30,7 +30,7 @@ def form():
     return redirect("http://www.facebook.com", code=302)
 
 if __name__ == '__main__':
-    print(Style.BRIGHT + Fore.BLUE + '[ * ] Open http://localhost/ to view page')
+    print(Style.BRIGHT + Fore.BLUE + '[ * ] Open http://localhost:{}/ to view page'.format(port))
 
     app.run(port=port)
     
